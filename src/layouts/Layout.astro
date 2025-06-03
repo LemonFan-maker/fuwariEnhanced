@@ -576,3 +576,30 @@ if (window.swup) {
 	document.addEventListener("swup:enable", setup)
 }
 </script>
+
+<!-- Add this script before the closing body tag -->
+<script>
+		const observerOptions = {
+			root: null,
+			rootMargin: '0px',
+			threshold: 0.1
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('scroll-reveal');
+					observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		// 监视文章卡片和其他需要动画的元素
+		document.addEventListener('DOMContentLoaded', () => {
+			const elements = document.querySelectorAll('.card-base, article img, .widget-layout');
+			elements.forEach(el => {
+				el.style.opacity = '0';
+				observer.observe(el);
+			});
+		});
+	</script>

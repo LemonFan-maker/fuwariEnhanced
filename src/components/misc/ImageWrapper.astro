@@ -42,8 +42,10 @@ if (isLocal) {
 	img = await file();
 }
 
-const imageClass = "w-full h-full object-cover";
+const imageClass =
+	"w-full h-full object-cover animate-[image-fade-in_0.5s_ease-out]";
 const imageStyle = `object-position: ${position}`;
+0;
 ---
 <div id={id} class:list={[className, 'overflow-hidden relative']}>
     <div class="transition absolute inset-0 dark:bg-black/10 bg-opacity-50 pointer-events-none"></div>
