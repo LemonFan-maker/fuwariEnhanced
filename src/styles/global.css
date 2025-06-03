@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'LXGWWenKai';
-  src: url('fonts/lxgw/LXGWWenKai-Regular.woff2') format('woff2');
+  src: url('public/fonts/lxgw/LXGWWenKai-Regular.woff2') format('woff2');
   font-weight: 400;  /* Regular 通常对应 400 */
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'LXGWWenKai';
-  src: url('fonts/lxgw/LXGWWenKai-Medium.woff2') format('woff2');
+  src: url('public/fonts/lxgw/LXGWWenKai-Medium.woff2') format('woff2');
   font-weight: 500;  /* Medium 通常对应 500 */
   font-style: normal;
   font-display: swap;
