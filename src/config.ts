@@ -12,7 +12,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Why there is a universe.",
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
-		hue: 200, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+		hue: 280, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: true, // Hide the theme color picker for visitors
 	},
 	banner: {
@@ -45,9 +45,16 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
+			name: "状态",
+			url: "https://stats.uptimerobot.com/ZIOLsjU8pC",
+			external: true,
+			icon: "material-symbols:monitoring",
+		},
+		{
 			name: "GitHub",
 			url: "https://github.com/LemonFan-maker", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
+			icon: "mdi:github",
 		},
 	],
 };
@@ -58,21 +65,21 @@ export const profileConfig: ProfileConfig = {
 	bio: "无人问天地变换,斗转星移,是为何故?",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			name: "XDAForum",
+			icon: "mdi:android", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://xdaforums.com/m/cyanli.12716981/",
 		},
 		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "52PJ",
+			icon: "mdi:tools",
+			url: "https://www.52pojie.cn/home.php?mod=space&uid=2381095",
 		},
 		{
 			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			icon: "mdi:github",
+			url: "https://github.com/LemonFan-maker",
 		},
 	],
 };
