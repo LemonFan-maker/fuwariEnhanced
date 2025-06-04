@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import AnnouncementImage from "../assets/images/announcement.png";
+import BackImage from "../assets/images/announcement.png";
+interface Props {
+	class?: string;
+	style?: string;
+}
+
+const { class: className, style } = Astro.props;
+---
+    <div class="card-base p-6 mb-4">
+
+        <div class="card-base p-1 mb-0.1">
+            <script is:inline></script>
+            <div class="flex items-center gap-2">
+
+            <h2 class="text-3xl font-extrabold leading-tight text-black/100 dark:text-white/100 m-0">
+                欢迎光临OrionisLi の 小站👋</h2>
+        </div>
+             <br/>
+        <div class="prose max-w-none text-black/75 dark:text-white/75">
+            <Image src={BackImage} alt="欢迎图片" class="rounded-xl w-full mb-4"/>
+            <p class="text-base"></p>
+            <br/>
+        </div>
+    </div>
+    <!-- card -->
+<div class="link-card__container">
+  <a href="/posts/announcement/" class="link-card">
+    <div class="link-card__info">
+      <div class="link-card__title">我的研究</div>
+      <div class="link-card__description">看看有没有感兴趣的?</div>
+      <div class="link-card__metadata">
+        <div class="link-card__domain">
+          <img alt="favicon" class="link-card__favicon" src="https://posts.orionisli.cn/favicon/favicon-light-32.png">
+          <span class="link-card__domain-name">posts.orionisli.cn</span>
+        </div>
+      </div>
+    </div>
+    <div class="link-card__thumbnail">
+      <Image src={AnnouncementImage} alt="公告图片" class="link-card__image"/>
+    </div>
+  </a>
+</div>
+    <!-- card -->
+
+    </div>

@@ -3,6 +3,7 @@ enum I18nKey {
 	about = "about",
 	archive = "archive",
 	search = "search",
+	blogs = "blog",
 
 	tags = "tags",
 	categories = "categories",
@@ -32,6 +33,7 @@ enum I18nKey {
 	author = "author",
 	publishedAt = "publishedAt",
 	license = "license",
+	friends = "friends",
 }
 
 export default I18nKey;

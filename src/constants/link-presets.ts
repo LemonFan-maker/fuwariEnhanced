@@ -18,4 +18,9 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		url: "/archive/",
 		icon: "material-symbols:archive-outline",
 	},
+	[LinkPreset.Blog]: {
+		name: i18n(I18nKey.blogs),
+		url: "/blogs/",
+		icon: "material-symbols:allergies-outline",
+	},
 };

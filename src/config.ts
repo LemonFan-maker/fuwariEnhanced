@@ -41,12 +41,13 @@ export const siteConfig: SiteConfig = {
 
 export const navBarConfig: NavBarConfig = {
 	links: [
+		LinkPreset.Blog,
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
 			name: "状态",
-			url: "https://stats.uptimerobot.com/ZIOLsjU8pC",
+			url: "https://status.orionisli.cn/share/AUO8OHRKBcwiExc5/posts.orionisli.cn",
 			external: true,
 			icon: "mdi:antenna",
 		},
