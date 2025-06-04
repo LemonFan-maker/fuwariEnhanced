@@ -48,13 +48,7 @@ export const navBarConfig: NavBarConfig = {
 			name: "状态",
 			url: "https://stats.uptimerobot.com/ZIOLsjU8pC",
 			external: true,
-			icon: "material-symbols:monitoring",
-		},
-		{
-			name: "GitHub",
-			url: "https://github.com/LemonFan-maker", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-			icon: "mdi:github",
+			icon: "mdi:antenna",
 		},
 	],
 };
